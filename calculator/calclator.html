@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <form id="mainForm">
+    <div class="">
+        <label for="FirstNumber">First Number</label><br>
+        <input type="text" name="FirstNumber" id="firstInput">
+    </div>
+    <small id="firsterror" style="color: red;">You need to put this place!</small>
+    <div class="mt-3" >
+        <label for="secondNumber">Second number</label><br>
+        <input type="text" name="secondNumber" id="secondInput">
+        <small id="seconderror" style="color: red;">You need to put this place!</small>
+    </div>
+    <div class="mt-3">
+        <select name="" id="operators" value="operators">
+            <option value="empty" id="">Operators</option>
+            <option value="add" id="">+</option>
+            <option value="sub" id="">-</option>
+            <option value="mult" id="">*</option>
+            <option value="division" id="">%</option>
+            <option value="divided" id="">/</option>
+        </select>
+        <small id="thirderror" style="color: red;">You need to chooose an operator!</small>
+    </div>
+    </form>
+    <div class="mt-3">
+        <div id="calculate" class="btn btn-dark me-5">
+            Calculate</div>
+        <div id="clear" class="btn btn-warning">
+            Clear</div>
+    </div>
+    <div id="text" class="mt-3">Answer</div>
+
+    <script src="calcualtor.js"></script>
+</body>
+</html>
